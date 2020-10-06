@@ -1,0 +1,126 @@
+
+/* NAVIGATION BAR */
+.body {
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.pagenav {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.pagenav-left {
+  display: flex;
+}
+
+.pagenav > .pagenav-left > div {
+  margin-right: 14px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.pagenav-links {
+  height: 22px;
+  border-bottom: 1px solid tranparent;
+  transition: border-bottom 0.5s;
+}
+
+.pagenav-links a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.pagenav-links:hover {
+  border-bottom: 1px solid black;
+}
+
+.pagenav-links a:hover {
+  color: black;
+  transition: color 0.5s;
+}
+
+/* HOME MENU */
+
+.content{
+  width: 100%;
+  height: 350px;
+  margin: 200px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfoliobox{
+  position: relative;
+  width: 100%;
+  height: 304px;
+  background: transparent;
+ 
+}
+
+.imgbox{
+  position: absolute;
+  overflow: hidden;
+}
+
+.content > .portfoliobox > .imgbox > img{
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  max-height: 300px;
+  transition: transform 1.5s;
+}
+
+.content > .portfoliobox:hover > .imgbox > img{
+  overflow: hidden;
+  transform: scale(1.5);
+}
+
+.content > .portfoliobox > .subtitlebox{
+  position: absolute;
+  transition: background-color 0.75s;
+  background-color: transparent;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.content > .portfoliobox:hover > .subtitlebox{
+  background-color: rgba(0, 0, 0, .9);
+}
+
+.content > .portfoliobox > .subtitlebox > .subtitle{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  transition: color 0.65s;
+  color: transparent;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.content > .portfoliobox > .subtitlebox > .subtitle > h2{
+  margin: 0px;
+  padding: 0px;
+  font-size: 40px;
+  transition: color 0.65s;
+  color: transparent;
+}
+
+
+.content > .portfoliobox:hover > .subtitlebox > .subtitle > h2{
+  color: #fff;
+}
+
+.content > .portfoliobox:hover > .subtitlebox > .subtitle {
+  color: seagreen;
+}
