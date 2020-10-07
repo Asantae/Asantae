@@ -1,7 +1,7 @@
 
 /* NAVIGATION BAR */
 .body {
-  margin: 0px;
+  margin: 10px;
 }
 
 .container {
@@ -59,7 +59,7 @@
 .portfoliobox{
   position: relative;
   width: 100%;
-  height: 304px;
+  height: 354px;
   background: transparent;
  
 }
@@ -70,10 +70,10 @@
 }
 
 .content > .portfoliobox > .imgbox > img{
-  height: 300px;
+  height: 350px;
   width: 100%;
   background-size: cover;
-  max-height: 300px;
+  max-height: 350px;
   transition: transform 1.5s;
 }
 
@@ -82,7 +82,7 @@
   transform: scale(1.5);
 }
 
-.content > .portfoliobox > .subtitlebox{
+.content a > .subtitlebox{
   position: absolute;
   transition: background-color 0.75s;
   background-color: transparent;
@@ -92,35 +92,58 @@
   bottom: 0px;
 }
 
-.content > .portfoliobox:hover > .subtitlebox{
+.content a:hover > .subtitlebox{
   background-color: rgba(0, 0, 0, .9);
 }
 
-.content > .portfoliobox > .subtitlebox > .subtitle{
+.content a > .subtitlebox > .subtitle{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
   padding: 15px;
-  transition: color 0.65s;
+  transition: color 0.65s ease;
   color: transparent;
   margin-left: 50px;
   margin-right: 50px;
 }
 
-.content > .portfoliobox > .subtitlebox > .subtitle > h2{
+.content a > .subtitlebox > .subtitle > h2{
   margin: 0px;
   padding: 0px;
   font-size: 40px;
-  transition: color 0.65s;
+  transition: color 0.65s ease-in-out;
   color: transparent;
 }
 
 
-.content > .portfoliobox:hover > .subtitlebox > .subtitle > h2{
+.content a:hover > .subtitlebox > .subtitle > h2{
   color: #fff;
 }
 
-.content > .portfoliobox:hover > .subtitlebox > .subtitle {
+.content a:hover > .subtitlebox > .subtitle {
   color: seagreen;
+}
+
+.content a{
+  text-decoration: none;
+}
+
+/* Page Information Template*/
+
+.pageInfo{
+
+  margin-left: 150px;
+  margin-right: 150px;
+
+  background-color: lightgray;
+}
+
+.pageHeader{
+  text-align: center;
+}
+
+.pageBody{
+  padding: 50px;
+  text-indent: 25px;
 }
